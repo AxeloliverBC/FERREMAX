@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FERREMAX - Inicio</title>
+    <link rel="stylesheet" href="CSS/Inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="Imagenes/logo.png" alt="Logo FERREMAX" class="animated">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ofertas y Novedades</a></li>
+                <li><a href="#">Galería de Fotos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="Imagenes/ferremax.png" alt="Banner FERREMAX" class="animated">
+        </section>
+
+        <section class="historia">
+            <div class="historia-content">
+                <center><h2>HISTORIA</h2></center>
+                <p>Fundada en 2022, FERREMAX se ha establecido como el lugar ideal para encontrar
+                    herramientas y materiales de construcción de calidad. Nuestro compromiso es ofrecer un excelente
+                    servicio al cliente y asesoria para que cada proyecto, grande o pequeño, sea un exitó ¡Visitanos y
+                    descubre todo lo que podemos ofrecerte!
+                </p>
+            </div>
+            <div class="historia-imagen">
+                <img src="Imagenes/historia.png" alt="Historia FERREMAX" class="animated">
+            </div>
+        </section>
+
+        <section class="facilidades">
+            <center><h2>FACILIDADES</h2></center>
+            <div class="facilidades-container">
+                <div class="facilidad">
+                    <i class="fas fa-star"></i>
+                    <p>Envios Gratis</p>
+                </div>
+                <div class="facilidad">
+                    <i class="fas fa-star"></i>
+                    <p>Aceptamos todos los metodos de pago</p>
+                </div>
+                <div class="facilidad">
+                    <i class="fas fa-star"></i>
+                    <p>Garantía de Satisfacción</p>
+                </div>
+                <div class="facilidad">
+                    <i class="fas fa-star"></i>
+                    <p>Promociones por compra minima</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="marcas">
+            <center><h2>MARCAS CON LAS QUE TRABAJAMOS</h2></center>
+            <div class="marcas-carousel">
+                <div><img src="Imagenes/stanley.png" alt="STANLEY" class="animated"></div>
+                <div><img src="Imagenes/bosch.png" alt="BOSCH" class="animated"></div>
+                <div><img src="Imagenes/milwaukee.png" alt="MILWAUKEE" class="animated"></div>
+                <div><img src="Imagenes/truper.png" alt="TRUPER" class="animated"></div>
+                <div><img src="Imagenes/HERMEX.png" alt="HERMEX" class="animated"></div>
+                <div><img src="Imagenes/petrul.png" alt="PETRUL" class="animated"></div>
+                <div><img src="Imagenes/makita.png" alt="MAKITA" class="animated"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Contacto</h3>
+                <p><i class="fas fa-phone"></i> Llámanos: +51 916667395
+                    +51 945632148</p>
+            </div>
+            <div class="footer-column">
+                <h3>Ubicación</h3>
+                <p><i class="fas fa-map-marker-alt"></i> FERREMAX</p>
+                <p>Avenida Nicolas Ayllon, 4233 Ate, Lima 15948</p>
+            </div>
+            <div class="footer-column">
+                <h3>Horario</h3>
+                <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                <p>Sábados: 9:00 AM - 1:00 PM</p>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="footer-entradas">
+            <h3>Entradas recientes</h3>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ofertas y Novedades</a></li>
+                <li><a href="#">Galería de Fotos</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="social-buttons">
+        <a href="https://wa.me/+51916667395" class="whatsapp-button"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/tuempresa" class="facebook-button"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.marcas-carousel').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            // Abrir enlaces de WhatsApp en la misma página
+            $('.whatsapp-button').on('click', function (e) {
+                e.preventDefault();
+                window.location.href = $(this).attr('href');
+            });
+        });
+    </script>
+</body>
+
+</html>

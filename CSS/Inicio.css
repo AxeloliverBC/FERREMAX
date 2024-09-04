@@ -1,0 +1,383 @@
+:root {
+    --primary-color: #FF6B00;
+    --secondary-color: #333333;
+    --background-color: #F5F5F5;
+    --text-color: #333333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content Styles */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h2 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+/* Hero Section */
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+/* Historia Section */
+.historia {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    align-items: flex-start;
+}
+
+.historia-content {
+    flex: 1;
+}
+
+.historia-imagen {
+    flex: 0 0 400px;
+}
+
+.historia-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Facilidades Section */
+.facilidades {
+    margin-bottom: 2rem;
+}
+
+.facilidades-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.facilidad {
+    text-align: center;
+}
+
+.facilidad i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* Marcas Section */
+.marcas-carousel {
+    margin-top: 1rem;
+}
+
+.marcas-carousel img {
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 1rem;
+}
+
+.footer-column h3 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+}
+
+.footer-column p {
+    margin: 0.5rem 0;
+}
+
+.footer-column i {
+    margin-right: 0.5rem;
+    color: var(--primary-color);
+}
+
+.footer-entradas {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+}
+
+.footer-entradas h3 {
+    color: var(--primary-color);
+}
+
+.footer-entradas ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-entradas ul li {
+    margin: 0 1rem;
+}
+
+.footer-entradas ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-entradas ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Social Buttons */
+.social-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.social-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+.social-buttons .fa-facebook {
+    background-color: #3b5998;
+}
+
+/* Animations */
+.animated {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .historia {
+        flex-direction: column;
+    }
+
+    .historia-imagen {
+        flex: 0 0 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin-bottom: 1rem;
+    }
+
+    .footer-entradas ul {
+        flex-direction: column;
+    }
+
+    .footer-entradas ul li {
+        margin: 0.5rem 0;
+    }
+}
+
+.animated {
+    animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.social-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+.social-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+}
+.social-buttons .fa-facebook {
+    background-color: #3b5998;
+}
+
+.animated {
+    transition: transform 0.3s ease-in-out;
+}
+
+.animated:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para los botones sociales */
+.social-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+.social-buttons button,
+.social-buttons a {
+    display: block;
+    margin-top: 10px;
+    font-size: 24px;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-buttons button:hover,
+.social-buttons a:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-button {
+    background-color: #25D366;
+    border: none;
+    cursor: pointer;
+}
+
+.facebook-button {
+    background-color: #25D366;
+}
+
+/* Estilos para el widget de WhatsApp */
+.eapps-whatsapp-chat-root {
+    --eapps-whatsapp-chat-bottom-offset: 70px !important;
+}
+
+/* Animaciones para los íconos en el footer */
+.footer-column .social-icon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.footer-column .social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Animaciones para los elementos de navegación */
+nav ul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Animaciones para las facilidades */
+.facilidad {
+    transition: transform 0.3s ease-in-out;
+}
+
+.facilidad:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para el carrusel de marcas */
+.marcas-carousel .slick-slide {
+    transition: transform 0.3s ease-in-out;
+}
+
+.marcas-carousel .slick-slide:hover {
+    transform: scale(1.1);
+}
